@@ -164,7 +164,6 @@
 
       .c-span-12{grid-column: span 12}
       .c-span-8{grid-column: span 8}
-      .c-span-6{grid-column: span 6}
       .c-span-4{grid-column: span 4}
 
       footer{
@@ -183,40 +182,8 @@
       }
       .foot a:hover{border-bottom-color:var(--accent)}
 
-      /* Contact icons */
-      .contact-row{
-        margin-top:10px;
-        display:flex;
-        gap:12px;
-        align-items:center;
-        flex-wrap:wrap;
-      }
-      .icon-link{
-        display:inline-flex;
-        align-items:center;
-        gap:10px;
-        padding:10px 12px;
-        border-radius:999px;
-        border:1px solid var(--line);
-        background:rgba(255,255,255,.03);
-        color:var(--text);
-      }
-      .icon-link:hover{border-color:rgba(255,204,0,.55)}
-      .icon{
-        width:18px;
-        height:18px;
-        display:inline-block;
-      }
-      .icon svg{width:18px;height:18px;display:block}
-      .icon-label{
-        color:var(--muted);
-        font-size:12px;
-        letter-spacing:.10em;
-        text-transform:uppercase;
-      }
-
       @media (max-width: 900px){
-        .c-span-8,.c-span-6,.c-span-4{grid-column: span 12}
+        .c-span-8,.c-span-4{grid-column: span 12}
         .hero{padding:44px 0 18px}
       }
     </style>
@@ -231,9 +198,9 @@
         </a>
         <nav aria-label="Primary">
           <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="./">Main</a></li>
+            <li><a href="./portfolio/">Portfolio</a></li>
+            <li><a href="./contact/">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -257,7 +224,7 @@
       </section>
 
       <main>
-        <div class="section-title" id="portfolio">
+        <div class="section-title">
           <h2>Featured</h2><div class="rule" aria-hidden="true"></div>
         </div>
 
@@ -328,47 +295,12 @@
             </a>
           </figure>
         </section>
-
-        <div class="section-title" id="about" style="margin-top:34px;">
-          <h2>About</h2><div class="rule" aria-hidden="true"></div>
-        </div>
-        <p class="sub">
-          Hi I’m Kevin, a Costa Rican born and based photographer inspired by the landscapes I explore. Passionate about hiking and nature, This space is not meant just to show what I saw, but rather shared with you what I felt in those quiet, awe-filled moments along the trail, I hope you enjoyed it.
-        </p>
-
-        <div class="section-title" id="contact" style="margin-top:26px;">
-          <h2>Contact</h2><div class="rule" aria-hidden="true"></div>
-        </div>
-        <p class="sub">
-          Email: <a href="mailto:jordi.222@hotmail.com">jordi.222@hotmail.com</a>
-        </p>
-        <div class="contact-row" aria-label="Social links">
-          <a class="icon-link" href="https://unsplash.com/@kevleal" target="_blank" rel="noreferrer" aria-label="Unsplash profile">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 9V3h6v6H9Z" fill="currentColor"/>
-                <path d="M3 21v-9h6v6h6v-6h6v9H3Z" fill="currentColor"/>
-              </svg>
-            </span>
-            <span class="icon-label">Unsplash</span>
-          </a>
-          <a class="icon-link" href="https://www.instagram.com/kevo_leal/" target="_blank" rel="noreferrer" aria-label="Instagram profile">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.75h9A4.75 4.75 0 0 1 21.25 7.5v9A4.75 4.75 0 0 1 16.5 21.25h-9A4.75 4.75 0 0 1 2.75 16.5v-9A4.75 4.75 0 0 1 7.5 2.75Zm0 1.5A3.25 3.25 0 0 0 4.25 7.5v9A3.25 3.25 0 0 0 7.5 19.75h9a3.25 3.25 0 0 0 3.25-3.25v-9A3.25 3.25 0 0 0 16.5 4.25h-9Z" fill="currentColor"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" fill="currentColor"/>
-                <path d="M17.25 6.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" fill="currentColor"/>
-              </svg>
-            </span>
-            <span class="icon-label">Instagram</span>
-          </a>
-        </div>
       </main>
     </div>
 
     <footer>
       <div class="wrap foot">
-        <div>  <span id="y"></span> KevinPhoto</div>
+        <div>© <span id="y"></span> KevinPhoto</div>
         <div>
           Photos: <a href="https://unsplash.com/@kevleal" target="_blank" rel="noreferrer">unsplash.com/@kevleal</a>
         </div>
